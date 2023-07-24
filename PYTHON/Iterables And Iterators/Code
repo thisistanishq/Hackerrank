@@ -1,0 +1,11 @@
+from itertools import combinations
+n=int(input())
+l=input().split()
+k=int(input())
+l1=list(combinations(l,k))
+counta=0
+for i in l1:
+    if "a" in i:
+        counta+=1
+p=counta/len(l1)
+print("%.4f"%p)
